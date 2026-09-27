@@ -37,6 +37,21 @@
       "wall_clock_s": 0.082,
       "served_model": "random-policy",
       "notes": "Cold test: random policy, capped at 500 steps. No JEV key yet."
+    },
+    {
+      "seed": 2,
+      "score": 150,
+      "steps": 500,
+      "frames": 2000,
+      "lives_lost": 2,
+      "terminated": false,
+      "truncated": true,
+      "model_calls": 0,
+      "decision_latency_ms_p50": 0.001,
+      "decision_latency_ms_p95": 0.0012,
+      "wall_clock_s": 0.084,
+      "served_model": "random-policy",
+      "notes": "Cold test: random policy, capped at 500 steps. No JEV key yet."
     }
   ]
 }
