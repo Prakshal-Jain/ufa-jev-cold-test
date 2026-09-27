@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "models": [
+    {
+      "role": "decider",
+      "provider": "none",
+      "requested_model": "random-policy",
+      "served_model": "random-policy",
+      "notes": "Placeholder until a JEV key is issued. Not JEV."
+    }
+  ],
+  "config": {
+    "env_id": "ALE/SpaceInvaders-v5",
+    "frameskip": 4,
+    "repeat_action_probability": 0.25,
+    "full_action_space": false,
+    "obs_type": "ram",
+    "wrappers": [],
+    "decision_interval_steps": 1,
+    "max_steps_per_run": 500,
+    "state_encoding": "none (random policy ignores state)",
+    "ale_py_version": "0.12.1",
+    "gymnasium_version": "1.3.0"
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "score": 155,
+      "steps": 493,
+      "frames": 1969,
+      "lives_lost": 3,
+      "terminated": true,
+      "truncated": false,
+      "model_calls": 0,
+      "decision_latency_ms_p50": 0.001,
+      "decision_latency_ms_p95": 0.0012,
+      "wall_clock_s": 0.082,
+      "served_model": "random-policy",
+      "notes": "Cold test: random policy, capped at 500 steps. No JEV key yet."
+    }
+  ]
+}
